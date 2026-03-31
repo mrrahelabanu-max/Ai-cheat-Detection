@@ -3,22 +3,22 @@
 An AI-based system that detects cheating in uploaded interview videos. 
 
 #Features
-Face detection (no face / multiple faces)
-Phone detection using YOLOv8
-Audio detection for suspicious voice
-AI-based decision making using Google Gemini
-Alert-based scoring system
-Dashboard to store and view past results
+-Face detection (no face / multiple faces)
+-Phone detection using YOLOv8
+-Audio detection for suspicious voice
+-AI-based decision making using Google Gemini
+-Alert-based scoring system
+-Dashboard to store and view past results
 
 #Technologies Used
-OpenCV – Video processing
-MediaPipe – Face detection
-YOLOv8 – Phone detection
-Streamlit – User interface
-MySQL – Data storage
-MoviePy – Audio extraction
+-OpenCV – Video processing
+-MediaPipe – Face detection
+-YOLOv8 – Phone detection
+-Streamlit – User interface
+-MySQL – Data storage
+-MoviePy – Audio extraction
 
-# Project Structure
+# Project structure
 app.py – Main application file
 Database (MySQL) – Stores user and cheating logs
 External models (YOLOv8) are downloaded automatically
