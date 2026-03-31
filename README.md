@@ -1,95 +1,17 @@
-AI Cheat Detector System
+The AI Cheat Detector System is an intelligent application designed to detect cheating in uploaded interview videos. It uses a combination of video, audio, and AI-based analysis to identify suspicious activities and provide a clear final decision.
 
-An AI-based system that detects cheating in uploaded interview videos using video, audio, and AI analysis.
+The system includes several important features such as face detection to identify absence or multiple faces, phone detection using YOLOv8, and audio analysis to detect suspicious voice activity.An alert-based scoring system is used to calculate the cheating probability, and a dashboard is provided to store and view past results.
 
-🚀 Features
-Face detection
-No face detection
-Multiple face detection
-Phone detection using YOLOv8
-Audio detection for suspicious voice
-AI-based decision making using Google Gemini
-Alert-based scoring system
-Dashboard to store and view past results
-🛠️ Technologies Used
-OpenCV
-Used for video processing
-MediaPipe
-Used for face detection
-YOLOv8
-Used for phone detection
-Streamlit
-Used for user interface
-MySQL
-Used for data storage
-MoviePy
-Used for audio extraction
-📁 Project Structure
-app.py
-Main application file
-MySQL Database
-Stores user details and cheating logs
-YOLOv8 Model
-Automatically downloaded during execution
-⚙️ Installation
+The project is built using multiple technologies. OpenCV is used for video processing, MediaPipe is used for face detection, and YOLOv8 is used for phone detection. Streamlit is used to create the user interface, while MySQL is used for storing user data and cheating logs. MoviePy is used for extracting and analyzing audio from the video.
 
-Install required libraries:
+The project structure is simple and easy to understand. The main file is app.py, which contains the complete logic of the system. A MySQL database is used to store user login details and analysis results. The YOLOv8 model required for object detection is automatically downloaded during execution, so no manual setup is required for it.
 
-pip install opencv-python numpy streamlit mysql-connector-python ultralytics mediapipe moviepy
-🗄️ Database Setup
+To run the project, the required Python libraries need to be installed, and a MySQL database named ai_cheat_detector should be created. The database credentials can be updated in the code if needed.A Gemini API key can be set as an environment variable for AI-based decision making. The application can then be started using the Streamlit command, and accessed through a web browser using the default login credentials.
 
-Create database:
+The system works in a step-by-step flow. First, the user uploads a video. The system then performs face detection, phone detection, and audio analysis. Based on these checks, alerts are generated and a cheating score is calculated. Finally, an AI-based decision is produced, and the results are stored in the database for future reference.
 
-CREATE DATABASE ai_cheat_detector;
+The output of the system includes the cheating score, probability, and risk level categorized as low, medium, or high. It also provides a final decision such as clean, suspicious, or cheating, along with clear reasons and alerts, making the result easy to understand.
 
-Update credentials in app.py:
+This project can be further improved by adding real-time monitoring, enhancing audio analysis, and improving behavior detection accuracy. The system is developed for educational purposes to demonstrate how AI can be used for cheating detection.
 
-DB_USER = "root"
-DB_PASSWORD = "1234"
-🔑 Gemini Setup (Optional)
-
-Set your API key:
-
-set GEMINI_API_KEY=your_api_key
-▶️ Run the Project
-
-Start the application:
-
-streamlit run app.py
-🔐 Login Credentials
-Username: admin
-Password: 1234
-🔄 System Flow
-Upload video
-Perform face detection
-Perform phone detection
-Perform audio analysis
-Generate alerts
-Calculate cheating score
-Generate AI decision
-Store results in database
-📊 Output
-Cheating score and probability
-Risk level
-Low
-Medium
-High
-Final decision
-Clean
-Suspicious
-Cheating
-Alerts and reasons
-🚀 Future Improvements
-Real-time monitoring
-Improved audio analysis
-More accurate behavior detection
-👥 Contributors
-Vishnupriya K.M
-Hamsa S.M
-Raheela Banu M.R
-Shaik Shekha
-Nandini R.R
-Shreeraksha Girish Kulkarni
-📌 Note
-This project is developed for educational purposes
-It demonstrates AI-based cheating detection
+Team Members: Vishnupriya K.M, Hamsa S.M, Raheela Banu M.R, Shaik Shekha, Nandini R.R, Shreeraksha Girish Kulkarni
